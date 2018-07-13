@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_gravity="top"
+            android:background="@color/colorPrimaryDark"
+            android:minHeight="48dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:elevation="10dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/Toolbar_Popup" />
+
+        <LinearLayout
+            android:id="@+id/movielayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/now_playing_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="@string/label_now_playing"
+                    android:textColor="@color/colorHeadings"
+                    android:textSize="@dimen/heading_font_size"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean" />
+
+                <Button
+                    android:id="@+id/showmore_now_playing_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="end"
+                    android:onClick="nowPlayingShowMore"
+                    android:text="@string/label_showMore"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:fontFamily="sans-serif"
+                    tools:targetApi="jelly_bean" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/transparent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/nowPlayingRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:clipToPadding="false"
+                android:scrollbars="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/top_rated_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="@string/label_top_rated"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorHeadings"
+                    android:textSize="@dimen/heading_font_size"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean" />
+
+                <Button
+
+                    android:id="@+id/showmore_top_rated_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="end"
+                    android:onClick="topRatedShowMore"
+                    android:text="@string/label_showMore"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:fontFamily="sans-serif"
+                    tools:targetApi="jelly_bean" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/transparent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/topRatedRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:clipToPadding="false"
+                android:scrollbars="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/popularMovies_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="@string/label_popular"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/colorHeadings"
+                    android:textSize="@dimen/heading_font_size"
+                    android:textStyle="bold"
+                    tools:targetApi="jelly_bean" />
+
+                <Button
+
+                    android:id="@+id/showmore_popular_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="end"
+                    android:onClick="popularShowMore"
+                    android:text="@string/label_showMore"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    tools:targetApi="jelly_bean" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/transparent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/popularRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:clipToPadding="false"
+                android:scrollbars="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/upcomingMovies_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_upcoming"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:textColor="@color/colorHeadings"
+                    android:textSize="@dimen/heading_font_size"
+                    android:textStyle="bold"
+                    app:fontFamily="serif" />
+
+                <Button
+                    android:id="@+id/showmore_upcoming_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:onClick="upcomingShowMore"
+                    android:text="@string/label_showMore"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:fontFamily="serif-monospace"
+
+                    />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/transparent" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/upcomingRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:clipToPadding="false"
+                    android:scrollbars="horizontal" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/favmovielayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movielayout"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/favMovies_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_favourites"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                android:textColor="@color/colorHeadings"
+                android:textSize="@dimen/heading_font_size"
+                android:textStyle="bold"
+                app:fontFamily="serif" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/transparent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/favoriteRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:clipToPadding="false"
+                android:scrollbars="horizontal" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/noInternetLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/favmovielayout"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/no_network_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/no_internet_image"
+                app:srcCompat="@drawable/no_network_image" />
+
+            <TextView
+                android:id="@+id/no_network_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no_network_image"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="@string/no_internet_warning"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/retry_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no_network_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="4dp"
+                android:background="@color/colorAccent"
+                android:onClick="isNetAvailable"
+                android:text="@string/retry"
+                android:textColor="#fefefe" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="150dp"
+    android:layout_height="280dp"
+    android:layout_marginLeft="10dp"
+
+    android:layout_marginRight="10dp"
+    android:background="@color/colorPrimaryDark">
+
+
+    <ImageView
+        android:id="@+id/movie_poster"
+        android:layout_width="150dp"
+        android:layout_height="230dp"
+        android:contentDescription="@string/movie_poster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/person" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/movie_poster"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/movie_rating"
+        android:layout_toStartOf="@+id/movie_rating"
+        android:contentDescription="@string/star"
+        app:layout_constraintBottom_toBottomOf="@+id/movie_poster"
+        app:layout_constraintEnd_toStartOf="@+id/movie_rating"
+        app:layout_constraintTop_toTopOf="@+id/movie_rating"
+        app:srcCompat="@drawable/ic_star_black_24dp" />
+
+    <TextView
+        android:id="@+id/movie_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/movie_poster"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/semiTransparent"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="end"
+        android:text="@string/_7_5"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/person_name"
+        app:layout_constraintEnd_toEndOf="@+id/movie_poster"
+        tools:targetApi="jelly_bean" />
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movie_poster"
+        android:layout_margin="2dp"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-smallcaps"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="@string/movie_name_comes_here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#bbb9ba"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movie_poster"
+        tools:targetApi="jelly_bean" />
+
+    <TextView
+        android:id="@+id/movie_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/person_name"
+        android:padding="4dp"
+        android:text="@string/_2008"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#bbb9ba"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_name" />
+
+    <TextView
+        android:id="@+id/movie_genre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/person_name"
+        android:layout_gravity="end"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/movie_year"
+        android:layout_toRightOf="@+id/movie_year"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="4dp"
+        android:singleLine="true"
+        android:text="@string/action_adventure"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#bbb9ba"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/movie_year"
+        app:layout_constraintTop_toBottomOf="@+id/person_name" />
+
+
+</android.support.constraint.ConstraintLayout>

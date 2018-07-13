@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <!--<Text: 596071, background:45494A 151c25, accent: f8ca0c, Headline: f1f2f3, play button: f4c210,genrebackground: 222831, votes:8c94a6, aboutFilm: 586071,   >-->
+    <color name="colorPrimary">#151c25</color>
+    <color name="colorPrimaryDark">#151c25</color>
+    <color name="colorAccent">#f8ca0c</color>
+    <color name="colorHeadings">#b6b8ba</color>
+    <color name="semiTransparent">#90000000</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="genreChips">#202a36</color>
+    <color name="castBackground">#202a36</color>
+    <color name="reviewBackground">#dcdee1</color>
+    <color name="similarBackground">#29313b</color>
+    <color name="movieInfoBackground">#1c232b</color>
+
+</resources>

@@ -1,0 +1,73 @@
+<resources>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="drawerArrowStyle">@style/DrawerArrowStyle</item>-->
+        <item name="colorControlHighlight">@color/colorAccent</item>
+
+        <item name="android:textColorHint">@color/similarBackground</item>
+    </style>
+
+    <!--<style name="MyRadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">-->
+    <!--<item name="android:button">@drawable/custom_btn_radio</item>-->
+    <!--<item name="android:drawablePadding">15dp</item>-->
+    <!--</style>-->
+
+
+    <style name="Toolbar_Popup" parent="Base.ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:background">@color/colorPrimary</item>
+
+    </style>
+
+    <!--<style name="FullscreenTheme" parent="android:Theme.NoTitleBar">-->
+    <!--<item name="android:windowContentOverlay">@null</item>-->
+    <!--<item name="android:windowBackground">@null</item>-->
+    <!--<item name="metaButtonBarStyle">@style/ButtonBar</item>-->
+    <!--<item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>-->
+    <!--</style>-->
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarStyle -->
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <!--<style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">-->
+    <!--<item name="spinBars">true</item>-->
+    <!--<item name="color">@android:color/white</item>-->
+    <!--</style>-->
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarButtonStyle -->
+    <!--<style name="ButtonBarButton" />-->
+
+
+    <!--<style name="DialogAnimation">-->
+    <!--<item name="android:windowEnterAnimation">@anim/slide_up</item>-->
+    <!--<item name="android:windowExitAnimation">@anim/slide_down</item>-->
+
+
+    <!--</style>-->
+
+    <!--<style name="DialogSlideAnim" parent="@android:style/Theme.Holo.Dialog">-->
+    <!--<item name="android:windowAnimationStyle">@style/DialogAnimation</item>-->
+    <!--<item name="android:background">@android:color/white</item>-->
+    <!--</style>-->
+
+    <style name="MyMaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyMaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

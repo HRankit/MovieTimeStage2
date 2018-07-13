@@ -1,0 +1,1030 @@
+<resources>
+    <string name="app_name">MovieTime</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="tagline">Tagline:</string>
+    <string name="revenue">Revenue:</string>
+    <string name="imdb">IMDB:</string>
+    <string name="budget">Budget:</string>
+    <string name="overview">Overview:</string>
+    <string name="_7_6">7.6</string>
+    <string name="user_rating">User Rating:</string>
+    <string name="_2017_02_03">2017–02–03</string>
+    <string name="no_internet_warning">No Working Internet Connection Detected. \nPlease connect to Internet and try again.</string>
+    <string name="retry">Retry</string>
+    <string name="no_internet_image">No Internet Image</string>
+    <string name="click_here">Click Here</string>
+    <string name="popular">Popular</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="votes_label">Votes:</string>
+    <string name="runtime_label">Runtime:</string>
+    <string name="homepage_url">Homepage url</string>
+    <string name="website">Website:</string>
+    <string name="movie_poster_shown_here">Movie Poster Shown Here</string>
+    <string name="movie_name_comes_here">Movie Name COmes Here</string>
+    <string name="movie_cover_image">Movie Cover Image</string>
+    <string name="release_placeholder_text">Release Date:</string>
+    <string name="user_rating_placeholder_text">User Rating:</string>
+    <string name="movietitle_placeholder_text">MovieTitle this ionw is long to check.</string>
+    <string name="movie_poster_content_description">Movie Poster</string>
+    <string name="cover_image_content_description">Cover Poster of Movie</string>
+    <string name="no_api_key_Warning">Please make sure you have API KEY placed in grade.properties</string>
+    <string name="no_ytapi_key_Warning">Please make sure you have Youtube API KEY placed in grade.properties to watch trailers in the app.</string>
+    <string name="cover_image">Backdrop Image</string>
+    <string name="url_image_w342">http://image.tmdb.org/t/p/w342</string>
+    <string name="no_reviews">No Reviews Available Yet.</string>
+
+    <style name="image_url_342">http://image.tmdb.org/t/p/w342</style>
+
+    <style name="cast_url_185">http://image.tmdb.org/t/p/w185</style>
+
+
+    <string-array name="countries_array_value">
+        <item>AD</item>
+        <item>AE</item>
+        <item>AF</item>
+        <item>AG</item>
+        <item>AI</item>
+        <item>AL</item>
+        <item>AM</item>
+        <item>AN</item>
+        <item>AO</item>
+        <item>AQ</item>
+        <item>AR</item>
+        <item>AS</item>
+        <item>AT</item>
+        <item>AU</item>
+        <item>AW</item>
+        <item>AZ</item>
+        <item>BA</item>
+        <item>BB</item>
+        <item>BD</item>
+        <item>BE</item>
+        <item>BF</item>
+        <item>BG</item>
+        <item>BH</item>
+        <item>BI</item>
+        <item>BJ</item>
+        <item>BM</item>
+        <item>BN</item>
+        <item>BO</item>
+        <item>BR</item>
+        <item>BS</item>
+        <item>BT</item>
+        <item>BV</item>
+        <item>BW</item>
+        <item>BZ</item>
+        <item>BY</item>
+        <item>CA</item>
+        <item>CC</item>
+        <item>CD</item>
+        <item>CF</item>
+        <item>CG</item>
+        <item>CH</item>
+        <item>CI</item>
+        <item>CK</item>
+        <item>CL</item>
+        <item>CM</item>
+        <item>CN</item>
+        <item>CO</item>
+        <item>CR</item>
+        <item>CS</item>
+        <item>CU</item>
+        <item>CV</item>
+        <item>CX</item>
+        <item>CY</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DJ</item>
+        <item>DK</item>
+        <item>DM</item>
+        <item>DO</item>
+        <item>DZ</item>
+        <item>EC</item>
+        <item>EE</item>
+        <item>EG</item>
+        <item>EH</item>
+        <item>ER</item>
+        <item>ES</item>
+        <item>ET</item>
+        <item>FI</item>
+        <item>FJ</item>
+        <item>FK</item>
+        <item>RS</item>
+        <item>FM</item>
+        <item>FO</item>
+        <item>FR</item>
+        <item>GA</item>
+        <item>GB</item>
+        <item>GD</item>
+        <item>GE</item>
+        <item>GF</item>
+        <item>GH</item>
+        <item>GI</item>
+        <item>GL</item>
+        <item>GM</item>
+        <item>GN</item>
+        <item>GP</item>
+        <item>GQ</item>
+        <item>GR</item>
+        <item>GS</item>
+        <item>GT</item>
+        <item>GU</item>
+        <item>GW</item>
+        <item>GY</item>
+        <item>HK</item>
+        <item>HM</item>
+        <item>HN</item>
+        <item>HR</item>
+        <item>HT</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IE</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>IO</item>
+        <item>IQ</item>
+        <item>IR</item>
+        <item>IS</item>
+        <item>IT</item>
+        <item>JM</item>
+        <item>JO</item>
+        <item>JP</item>
+        <item>KE</item>
+        <item>KG</item>
+        <item>KH</item>
+        <item>KI</item>
+        <item>KM</item>
+        <item>KN</item>
+        <item>KP</item>
+        <item>KW</item>
+        <item>KY</item>
+        <item>KZ</item>
+        <item>LA</item>
+        <item>LB</item>
+        <item>LC</item>
+        <item>LI</item>
+        <item>LK</item>
+        <item>LR</item>
+        <item>LS</item>
+        <item>LT</item>
+        <item>LU</item>
+        <item>LV</item>
+        <item>LY</item>
+        <item>MA</item>
+        <item>MC</item>
+        <item>MD</item>
+        <item>MG</item>
+        <item>MH</item>
+        <item>MK</item>
+        <item>ML</item>
+        <item>MM</item>
+        <item>MN</item>
+        <item>MO</item>
+        <item>MP</item>
+        <item>MQ</item>
+        <item>MR</item>
+        <item>MS</item>
+        <item>MT</item>
+        <item>MU</item>
+        <item>MV</item>
+        <item>MW</item>
+        <item>MX</item>
+        <item>MY</item>
+        <item>MZ</item>
+        <item>NA</item>
+        <item>NC</item>
+        <item>NE</item>
+        <item>NF</item>
+        <item>NG</item>
+        <item>ME</item>
+        <item>NI</item>
+        <item>NL</item>
+        <item>NO</item>
+        <item>NP</item>
+        <item>NR</item>
+        <item>NU</item>
+        <item>NZ</item>
+        <item>OM</item>
+        <item>PA</item>
+        <item>PE</item>
+        <item>PF</item>
+        <item>PG</item>
+        <item>PH</item>
+        <item>YU</item>
+        <item>XK</item>
+        <item>XC</item>
+        <item>PK</item>
+        <item>PL</item>
+        <item>PM</item>
+        <item>PN</item>
+        <item>PR</item>
+        <item>PS</item>
+        <item>PT</item>
+        <item>PW</item>
+        <item>PY</item>
+        <item>QA</item>
+        <item>RE</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>RW</item>
+        <item>SA</item>
+        <item>SB</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>SE</item>
+        <item>SG</item>
+        <item>SH</item>
+        <item>SI</item>
+        <item>SJ</item>
+        <item>SK</item>
+        <item>SL</item>
+        <item>SM</item>
+        <item>SN</item>
+        <item>SO</item>
+        <item>SR</item>
+        <item>ST</item>
+        <item>SV</item>
+        <item>SY</item>
+        <item>SZ</item>
+        <item>TC</item>
+        <item>TD</item>
+        <item>TF</item>
+        <item>TG</item>
+        <item>TH</item>
+        <item>TJ</item>
+        <item>TK</item>
+        <item>TL</item>
+        <item>TM</item>
+        <item>TN</item>
+        <item>TO</item>
+        <item>TR</item>
+        <item>TT</item>
+        <item>TV</item>
+        <item>TW</item>
+        <item>TZ</item>
+        <item>UA</item>
+        <item>UG</item>
+        <item>UM</item>
+        <item>US</item>
+        <item>UY</item>
+        <item>UZ</item>
+        <item>VA</item>
+        <item>VC</item>
+        <item>VE</item>
+        <item>VG</item>
+        <item>VI</item>
+        <item>VN</item>
+        <item>VU</item>
+        <item>WF</item>
+        <item>WS</item>
+        <item>YE</item>
+        <item>YT</item>
+        <item>ZA</item>
+        <item>ZM</item>
+        <item>ZW</item>
+        <item>KR</item>
+        <item>XG</item>
+        <item>SU</item>
+        <item>SS</item>
+    </string-array>
+
+    <string-array name="countries_array">
+        <item>Andorra</item>
+        <item>United Arab Emirates</item>
+        <item>Afghanistan</item>
+        <item>Antigua and Barbuda</item>
+        <item>Anguilla</item>
+        <item>Albania</item>
+        <item>Armenia</item>
+        <item>Netherlands Antilles</item>
+        <item>Angola</item>
+        <item>Antarctica</item>
+        <item>Argentina</item>
+        <item>American Samoa</item>
+        <item>Austria</item>
+        <item>Australia</item>
+        <item>Aruba</item>
+        <item>Azerbaijan</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Barbados</item>
+        <item>Bangladesh</item>
+        <item>Belgium</item>
+        <item>Burkina Faso</item>
+        <item>Bulgaria</item>
+        <item>Bahrain</item>
+        <item>Burundi</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Brunei Darussalam</item>
+        <item>Bolivia</item>
+        <item>Brazil</item>
+        <item>Bahamas</item>
+        <item>Bhutan</item>
+        <item>Bouvet Island</item>
+        <item>Botswana</item>
+        <item>Belize</item>
+        <item>Belarus</item>
+        <item>Canada</item>
+        <item>Cocos  Islands</item>
+        <item>Congo</item>
+        <item>Central African Republic</item>
+        <item>Congo</item>
+        <item>Switzerland</item>
+        <item>Cote D'Ivoire</item>
+        <item>Cook Islands</item>
+        <item>Chile</item>
+        <item>Cameroon</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Serbia and Montenegro</item>
+        <item>Cuba</item>
+        <item>Cape Verde</item>
+        <item>Christmas Island</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Germany</item>
+        <item>Djibouti</item>
+        <item>Denmark</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>Algeria</item>
+        <item>Ecuador</item>
+        <item>Estonia</item>
+        <item>Egypt</item>
+        <item>Western Sahara</item>
+        <item>Eritrea</item>
+        <item>Spain</item>
+        <item>Ethiopia</item>
+        <item>Finland</item>
+        <item>Fiji</item>
+        <item>Falkland Islands</item>
+        <item>Serbia</item>
+        <item>Micronesia</item>
+        <item>Faeroe Islands</item>
+        <item>France</item>
+        <item>Gabon</item>
+        <item>United Kingdom</item>
+        <item>Grenada</item>
+        <item>Georgia</item>
+        <item>French Guiana</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greenland</item>
+        <item>Gambia</item>
+        <item>Guinea</item>
+        <item>Guadaloupe</item>
+        <item>Equatorial Guinea</item>
+        <item>Greece</item>
+        <item>South Georgia and the South Sandwich Islands</item>
+        <item>Guatemala</item>
+        <item>Guam</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Hong Kong</item>
+        <item>Heard and McDonald Islands</item>
+        <item>Honduras</item>
+        <item>Croatia</item>
+        <item>Haiti</item>
+        <item>Hungary</item>
+        <item>Indonesia</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>India</item>
+        <item>British Indian Ocean Territory</item>
+        <item>Iraq</item>
+        <item>Iran</item>
+        <item>Iceland</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Jordan</item>
+        <item>Japan</item>
+        <item>Kenya</item>
+        <item>Kyrgyz Republic</item>
+        <item>Cambodia</item>
+        <item>Kiribati</item>
+        <item>Comoros</item>
+        <item>St. Kitts and Nevis</item>
+        <item>North Korea</item>
+        <item>Kuwait</item>
+        <item>Cayman Islands</item>
+        <item>Kazakhstan</item>
+        <item>Lao People's Democratic Republic</item>
+        <item>Lebanon</item>
+        <item>St. Lucia</item>
+        <item>Liechtenstein</item>
+        <item>Sri Lanka</item>
+        <item>Liberia</item>
+        <item>Lesotho</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Latvia</item>
+        <item>Libyan Arab Jamahiriya</item>
+        <item>Morocco</item>
+        <item>Monaco</item>
+        <item>Moldova</item>
+        <item>Madagascar</item>
+        <item>Marshall Islands</item>
+        <item>Macedonia</item>
+        <item>Mali</item>
+        <item>Myanmar</item>
+        <item>Mongolia</item>
+        <item>Macao</item>
+        <item>Northern Mariana Islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Montserrat</item>
+        <item>Malta</item>
+        <item>Mauritius</item>
+        <item>Maldives</item>
+        <item>Malawi</item>
+        <item>Mexico</item>
+        <item>Malaysia</item>
+        <item>Mozambique</item>
+        <item>Namibia</item>
+        <item>New Caledonia</item>
+        <item>Niger</item>
+        <item>Norfolk Island</item>
+        <item>Nigeria</item>
+        <item>Montenegro</item>
+        <item>Nicaragua</item>
+        <item>Netherlands</item>
+        <item>Norway</item>
+        <item>Nepal</item>
+        <item>Nauru</item>
+        <item>Niue</item>
+        <item>New Zealand</item>
+        <item>Oman</item>
+        <item>Panama</item>
+        <item>Peru</item>
+        <item>French Polynesia</item>
+        <item>Papua New Guinea</item>
+        <item>Philippines</item>
+        <item>Yugoslavia</item>
+        <item>Kosovo</item>
+        <item>Czechoslovakia</item>
+        <item>Pakistan</item>
+        <item>Poland</item>
+        <item>St. Pierre and Miquelon</item>
+        <item>Pitcairn Island</item>
+        <item>Puerto Rico</item>
+        <item>Palestinian Territory</item>
+        <item>Portugal</item>
+        <item>Palau</item>
+        <item>Paraguay</item>
+        <item>Qatar</item>
+        <item>Reunion</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Saudi Arabia</item>
+        <item>Solomon Islands</item>
+        <item>Seychelles</item>
+        <item>Sudan</item>
+        <item>Sweden</item>
+        <item>Singapore</item>
+        <item>St. Helena</item>
+        <item>Slovenia</item>
+        <item>Svalbard and Jan Mayen Islands</item>
+        <item>Slovakia</item>
+        <item>Sierra Leone</item>
+        <item>San Marino</item>
+        <item>Senegal</item>
+        <item>Somalia</item>
+        <item>Suriname</item>
+        <item>Sao Tome and Principe</item>
+        <item>El Salvador</item>
+        <item>Syrian Arab Republic</item>
+        <item>Swaziland</item>
+        <item>Turks and Caicos Islands</item>
+        <item>Chad</item>
+        <item>French Southern Territories</item>
+        <item>Togo</item>
+        <item>Thailand</item>
+        <item>Tajikistan</item>
+        <item>Tokelau</item>
+        <item>Timor-Leste</item>
+        <item>Turkmenistan</item>
+        <item>Tunisia</item>
+        <item>Tonga</item>
+        <item>Turkey</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tuvalu</item>
+        <item>Taiwan</item>
+        <item>Tanzania</item>
+        <item>Ukraine</item>
+        <item>Uganda</item>
+        <item>United States Minor Outlying Islands</item>
+        <item>United States of America</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Holy See</item>
+        <item>St. Vincent and the Grenadines</item>
+        <item>Venezuela</item>
+        <item>British Virgin Islands</item>
+        <item>US Virgin Islands</item>
+        <item>Vietnam</item>
+        <item>Vanuatu</item>
+        <item>Wallis and Futuna Islands</item>
+        <item>Samoa</item>
+        <item>Yemen</item>
+        <item>Mayotte</item>
+        <item>South Africa</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+        <item>South Korea</item>
+        <item>East Germany</item>
+        <item>Soviet Union</item>
+        <item>South Sudan</item>
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+
+
+    <string-array name="language_values_array">
+        <item>xx</item>
+        <item>aa</item>
+        <item>af</item>
+        <item>ak</item>
+        <item>an</item>
+        <item>as</item>
+        <item>av</item>
+        <item>ae</item>
+        <item>ay</item>
+        <item>az</item>
+        <item>ba</item>
+        <item>bm</item>
+        <item>bi</item>
+        <item>bo</item>
+        <item>br</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>ce</item>
+        <item>cu</item>
+        <item>cv</item>
+        <item>kw</item>
+        <item>co</item>
+        <item>cr</item>
+        <item>cy</item>
+        <item>da</item>
+        <item>de</item>
+        <item>dv</item>
+        <item>dz</item>
+        <item>eo</item>
+        <item>et</item>
+        <item>eu</item>
+        <item>fo</item>
+        <item>fj</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>fy</item>
+        <item>ff</item>
+        <item>gd</item>
+        <item>ga</item>
+        <item>gl</item>
+        <item>gv</item>
+        <item>gn</item>
+        <item>gu</item>
+        <item>ht</item>
+        <item>ha</item>
+        <item>sh</item>
+        <item>hz</item>
+        <item>ho</item>
+        <item>hr</item>
+        <item>hu</item>
+        <item>ig</item>
+        <item>io</item>
+        <item>ii</item>
+        <item>iu</item>
+        <item>ie</item>
+        <item>ia</item>
+        <item>id</item>
+        <item>ik</item>
+        <item>is</item>
+        <item>it</item>
+        <item>jv</item>
+        <item>ja</item>
+        <item>kl</item>
+        <item>kn</item>
+        <item>ks</item>
+        <item>kr</item>
+        <item>kk</item>
+        <item>km</item>
+        <item>ki</item>
+        <item>rw</item>
+        <item>ky</item>
+        <item>kv</item>
+        <item>kg</item>
+        <item>ko</item>
+        <item>kj</item>
+        <item>ku</item>
+        <item>lo</item>
+        <item>la</item>
+        <item>lv</item>
+        <item>li</item>
+        <item>ln</item>
+        <item>lt</item>
+        <item>lb</item>
+        <item>lu</item>
+        <item>lg</item>
+        <item>mh</item>
+        <item>ml</item>
+        <item>mr</item>
+        <item>mg</item>
+        <item>mt</item>
+        <item>mo</item>
+        <item>mn</item>
+        <item>mi</item>
+        <item>ms</item>
+        <item>my</item>
+        <item>na</item>
+        <item>nv</item>
+        <item>nr</item>
+        <item>nd</item>
+        <item>ng</item>
+        <item>ne</item>
+        <item>nl</item>
+        <item>nn</item>
+        <item>nb</item>
+        <item>no</item>
+        <item>ny</item>
+        <item>oc</item>
+        <item>oj</item>
+        <item>or</item>
+        <item>om</item>
+        <item>os</item>
+        <item>pi</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>qu</item>
+        <item>rm</item>
+        <item>ro</item>
+        <item>rn</item>
+        <item>ru</item>
+        <item>sg</item>
+        <item>sa</item>
+        <item>si</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>se</item>
+        <item>sm</item>
+        <item>sn</item>
+        <item>sd</item>
+        <item>so</item>
+        <item>st</item>
+        <item>es</item>
+        <item>sq</item>
+        <item>sc</item>
+        <item>sr</item>
+        <item>ss</item>
+        <item>su</item>
+        <item>sw</item>
+        <item>sv</item>
+        <item>ty</item>
+        <item>ta</item>
+        <item>tt</item>
+        <item>te</item>
+        <item>tg</item>
+        <item>tl</item>
+        <item>th</item>
+        <item>ti</item>
+        <item>to</item>
+        <item>tn</item>
+        <item>ts</item>
+        <item>tk</item>
+        <item>tr</item>
+        <item>tw</item>
+        <item>ug</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>uz</item>
+        <item>ve</item>
+        <item>vi</item>
+        <item>vo</item>
+        <item>wa</item>
+        <item>wo</item>
+        <item>xh</item>
+        <item>yi</item>
+        <item>za</item>
+        <item>zu</item>
+        <item>ab</item>
+        <item>zh</item>
+        <item>ps</item>
+        <item>am</item>
+        <item>ar</item>
+        <item>bg</item>
+        <item>cn</item>
+        <item>mk</item>
+        <item>el</item>
+        <item>fa</item>
+        <item>he</item>
+        <item>hi</item>
+        <item>hy</item>
+        <item>en</item>
+        <item>ee</item>
+        <item>ka</item>
+        <item>pa</item>
+        <item>bn</item>
+        <item>bs</item>
+        <item>ch</item>
+        <item>be</item>
+    </string-array>
+    <string-array name="language_array">
+        <item>No Language</item>
+        <item>Afar</item>
+        <item>Afrikaans</item>
+        <item>Akan</item>
+        <item>Aragonese</item>
+        <item>Assamese</item>
+        <item>Avaric</item>
+        <item>Avestan</item>
+        <item>Aymara</item>
+        <item>Azerbaijani</item>
+        <item>Bashkir</item>
+        <item>Bambara</item>
+        <item>Bislama</item>
+        <item>Tibetan</item>
+        <item>Breton</item>
+        <item>Catalan</item>
+        <item>Czech</item>
+        <item>Chechen</item>
+        <item>Slavic</item>
+        <item>Chuvash</item>
+        <item>Cornish</item>
+        <item>Corsican</item>
+        <item>Cree</item>
+        <item>Welsh</item>
+        <item>Danish</item>
+        <item>German</item>
+        <item>Divehi</item>
+        <item>Dzongkha</item>
+        <item>Esperanto</item>
+        <item>Estonian</item>
+        <item>Basque</item>
+        <item>Faroese</item>
+        <item>Fijian</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>Frisian</item>
+        <item>Fulah</item>
+        <item>Gaelic</item>
+        <item>Irish</item>
+        <item>Galician</item>
+        <item>Manx</item>
+        <item>Guarani</item>
+        <item>Gujarati</item>
+        <item>Haitian; Haitian Creole</item>
+        <item>Hausa</item>
+        <item>Serbo-Croatian</item>
+        <item>Herero</item>
+        <item>Hiri Motu</item>
+        <item>Croatian</item>
+        <item>Hungarian</item>
+        <item>Igbo</item>
+        <item>Ido</item>
+        <item>Yi</item>
+        <item>Inuktitut</item>
+        <item>Interlingue</item>
+        <item>Interlingua</item>
+        <item>Indonesian</item>
+        <item>Inupiaq</item>
+        <item>Icelandic</item>
+        <item>Italian</item>
+        <item>Javanese</item>
+        <item>Japanese</item>
+        <item>Kalaallisut</item>
+        <item>Kannada</item>
+        <item>Kashmiri</item>
+        <item>Kanuri</item>
+        <item>Kazakh</item>
+        <item>Khmer</item>
+        <item>Kikuyu</item>
+        <item>Kinyarwanda</item>
+        <item>Kirghiz</item>
+        <item>Komi</item>
+        <item>Kongo</item>
+        <item>Korean</item>
+        <item>Kuanyama</item>
+        <item>Kurdish</item>
+        <item>Lao</item>
+        <item>Latin</item>
+        <item>Latvian</item>
+        <item>Limburgish</item>
+        <item>Lingala</item>
+        <item>Lithuanian</item>
+        <item>Letzeburgesch</item>
+        <item>Luba-Katanga</item>
+        <item>Ganda</item>
+        <item>Marshall</item>
+        <item>Malayalam</item>
+        <item>Marathi</item>
+        <item>Malagasy</item>
+        <item>Maltese</item>
+        <item>Moldavian</item>
+        <item>Mongolian</item>
+        <item>Maori</item>
+        <item>Malay</item>
+        <item>Burmese</item>
+        <item>Nauru</item>
+        <item>Navajo</item>
+        <item>Ndebele</item>
+        <item>Ndebele</item>
+        <item>Ndonga</item>
+        <item>Nepali</item>
+        <item>Dutch</item>
+        <item>Norwegian Nynorsk</item>
+        <item>Norwegian Bokmal</item>
+        <item>Norwegian</item>
+        <item>Chichewa; Nyanja</item>
+        <item>Occitan</item>
+        <item>Ojibwa</item>
+        <item>Oriya</item>
+        <item>Oromo</item>
+        <item>Ossetian; Ossetic</item>
+        <item>Pali</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Quechua</item>
+        <item>Raeto-Romance</item>
+        <item>Romanian</item>
+        <item>Rundi</item>
+        <item>Russian</item>
+        <item>Sango</item>
+        <item>Sanskrit</item>
+        <item>Sinhalese</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Northern Sami</item>
+        <item>Samoan</item>
+        <item>Shona</item>
+        <item>Sindhi</item>
+        <item>Somali</item>
+        <item>Sotho</item>
+        <item>Spanish</item>
+        <item>Albanian</item>
+        <item>Sardinian</item>
+        <item>Serbian</item>
+        <item>Swati</item>
+        <item>Sundanese</item>
+        <item>Swahili</item>
+        <item>Swedish</item>
+        <item>Tahitian</item>
+        <item>Tamil</item>
+        <item>Tatar</item>
+        <item>Telugu</item>
+        <item>Tajik</item>
+        <item>Tagalog</item>
+        <item>Thai</item>
+        <item>Tigrinya</item>
+        <item>Tonga</item>
+        <item>Tswana</item>
+        <item>Tsonga</item>
+        <item>Turkmen</item>
+        <item>Turkish</item>
+        <item>Twi</item>
+        <item>Uighur</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+        <item>Uzbek</item>
+        <item>Venda</item>
+        <item>Vietnamese</item>
+        <item>Volapuk</item>
+        <item>Walloon</item>
+        <item>Wolof</item>
+        <item>Xhosa</item>
+        <item>Yiddish</item>
+        <item>Zhuang</item>
+        <item>Zulu</item>
+        <item>Abkhazian</item>
+        <item>Mandarin</item>
+        <item>Pushto</item>
+        <item>Amharic</item>
+        <item>Arabic</item>
+        <item>Bulgarian</item>
+        <item>Cantonese</item>
+        <item>Macedonian</item>
+        <item>Greek</item>
+        <item>Persian</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Armenian</item>
+        <item>English</item>
+        <item>Ewe</item>
+        <item>Georgian</item>
+        <item>Punjabi</item>
+        <item>Bengali</item>
+        <item>Bosnian</item>
+        <item>Chamorro</item>
+        <item>Belarusian</item>
+    </string-array>
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="settings">Settings</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="label_favourites">FAVORITES</string>
+    <string name="label_upcoming">UPCOMING</string>
+    <string name="label_showMore">SHOW MORE</string>
+    <string name="label_popular">POPULAR</string>
+    <string name="label_now_playing">NOW PLAYING</string>
+    <string name="label_top_rated">TOP RATED</string>
+    <string name="search">Search</string>
+    <string name="share">Share</string>
+    <string name="hide_info_button_label">Hide Info</string>
+    <string name="show_info_button_label">Show Info</string>
+    <string name="overview_error_display">Overview Currently Unavailable. Please try again later.</string>
+    <string name="show_more">Show More</string>
+    <string name="similar">SIMILAR</string>
+    <string name="recommendations">RECOMMENDATIONS</string>
+    <string name="reviews">REVIEWS</string>
+    <string name="cast">CAST</string>
+    <string name="play_trailer">Play Trailer</string>
+    <string name="dummy_overview">Elastigirl springs into action to save the day, while Mr. Incredible faces his greatest challenge yet – taking care of the problems of his three children.</string>
+    <string name="mark_movie_favourite">Mark Movie Favourite</string>
+    <string name="dummy_runtime">2hr 15min</string>
+    <string name="clock">Clock</string>
+    <string name="placeholder_review">I felt embarrassed to be watching this. It\'s an embarrassing fever dream. I abandoned it halfway through its runtime.</string>
+    <string name="author_name">Author Name</string>
+    <string name="placeholder_overview">Overvire will come here</string>
+    <string name="search_button">Search Button</string>
+    <string name="actor_image">Actor_image</string>
+    <string name="name_of_actor">Name Of Actor</string>
+    <string name="character_name">Character Name</string>
+    <string name="title">Title</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="star">Star</string>
+    <string name="_7_5">7.5</string>
+    <string name="_2008">2008</string>
+    <string name="action_adventure">Action, Adventure</string>
+    <string name="known_for">Known For:</string>
+    <string name="youtube_image">Youtube Image</string>
+    <string name="play_button">play button</string>
+</resources>

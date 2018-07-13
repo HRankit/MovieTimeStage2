@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="IN"
+        android:entries="@array/countries_array"
+        android:entryValues="@array/countries_array_value"
+        android:key="country_preference"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="%s"
+        android:title="Country" />
+
+    <ListPreference
+        android:defaultValue="en"
+        android:entries="@array/language_array"
+        android:entryValues="@array/language_values_array"
+        android:key="language_preference"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="%s"
+        android:title="Language" />
+
+</PreferenceScreen>
