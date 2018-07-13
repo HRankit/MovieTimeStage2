@@ -64,9 +64,11 @@ View Model provides an efficient way for managing the Orientation Changes withou
 Get an idea of the app.
 ***
 ![Look and Feel of App](https://thumbs.gfycat.com/ForsakenDefensiveIrukandjijellyfish-size_restricted.gif)
+
 General Look and Feel of App
 ***
 ![Trailer MovieTime](https://thumbs.gfycat.com/FailingBreakableBordercollie-size_restricted.gif)
+
 Watch Trailers within app provided YoutubeApiKey is provided.
 ***
 
@@ -76,9 +78,11 @@ Watch Trailers within app provided YoutubeApiKey is provided.
 Find Movie or Person
 *****
 ![Settings MovieTime](https://thumbs.gfycat.com/ZanyBogusDoctorfish-size_restricted.gif)
+
 Settings which change the api parameters to match your need.
 ***
 ![Favorite MovieTime](https://thumbs.gfycat.com/ShrillFrailBovine-size_restricted.gif)
+
 Favorites and ViewModels *marvellous performance*
 
 *****
