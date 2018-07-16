@@ -5,7 +5,6 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.arch.paging.PagedList;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -31,6 +30,7 @@ import com.udacity.popularmovies2.movietime.adapter.ListGridAdapter;
 import com.udacity.popularmovies2.movietime.model.main.Result;
 import com.udacity.popularmovies2.movietime.network.NetworkState;
 import com.udacity.popularmovies2.movietime.settings.MyPreferenceActivity;
+import com.udacity.popularmovies2.movietime.utils.MiscFunctions;
 import com.udacity.popularmovies2.movietime.viewmodel.CustomViewModel;
 import com.udacity.popularmovies2.movietime.viewmodel.SortedMoviesViewModel;
 
@@ -164,12 +164,16 @@ public class ListGridActivity extends AppCompatActivity {
             }
         });
 
+
+        int mNoOfColumns = MiscFunctions.calculateNoOfColumns(ListGridActivity.this);
+
         RecyclerView.LayoutManager mLayoutManager;
-        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
-            mLayoutManager = new GridLayoutManager(this, 2);
-        } else {
-            mLayoutManager = new GridLayoutManager(this, 4);
-        }
+//        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+//            mLayoutManager = new GridLayoutManager(this, 2);
+//        } else {
+//            mLayoutManager = new GridLayoutManager(this, 4);
+//        }
+        mLayoutManager = new GridLayoutManager(this, mNoOfColumns);
 
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());

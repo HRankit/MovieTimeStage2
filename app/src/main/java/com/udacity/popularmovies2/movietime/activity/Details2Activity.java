@@ -27,7 +27,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -83,14 +82,13 @@ public class Details2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_details);
 
         Bundle extras = getIntent().getExtras();
-        if (extras != null && extras.containsKey("movie_id")) {
+        if (extras != null && extras.containsKey(MOVIE_ID_KEY)) {
             movie_id = extras.get(MOVIE_ID_KEY).toString();
 
 
             mDb = AppDatabase.getInstance(getApplicationContext());
             initViewModel(movie_id);
 
-            Log.d(getClass().getName(), "This is the movie ID: " + movie_id);
 
         } else {
             onBackPressed();

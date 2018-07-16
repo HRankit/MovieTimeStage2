@@ -11,6 +11,7 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -27,6 +28,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -66,6 +68,15 @@ public class MainActivity extends AppCompatActivity {
     private TopRatedViewModel topRatedViewModel;
     private NowPlayingViewModel nowPlayingViewModel;
     private UpcomingViewModel upcomingViewModel;
+    private String SCROLL_POSITION = "ARTICLE_SCROLL_POSITION";
+    private String NOW_PLAYING_POSITION = "NOW_PLAYING_POSITION";
+    private String POPULAR_POSITION = "POPULAR_POSITION";
+    private String TOP_RATED_POSITION = "TOP_RATED_POSITION";
+    private String UPCOMING_POSITION = "UPCOMING_POSITION";
+    private String FAVORITE_POSITION = "FAVORITE_POSITION";
+    private ScrollView mScrollView;
+
+
     private final BroadcastReceiver networkChangeReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -82,6 +93,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
     };
+    private Parcelable nowPlayingState;
+    private Parcelable upcominState;
+    private Parcelable topRatedState;
+    private Parcelable popularState;
+    private Parcelable favoriteState;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -204,6 +220,25 @@ public class MainActivity extends AppCompatActivity {
         MoviePosterRecyclerViewAdapter adapter = new MoviePosterRecyclerViewAdapter(MainActivity.this, photoList.getResults());
         rv.setAdapter(adapter);
         adapter.notifyDataSetChanged();
+        restoreScrollState();
+    }
+
+    private void restoreScrollState() {
+        if (nowPlayingState != null) {
+            nowPlayingRV.getLayoutManager().onRestoreInstanceState(nowPlayingState);
+        }
+        if (popularState != null) {
+            popularRV.getLayoutManager().onRestoreInstanceState(popularState);
+        }
+        if (topRatedState != null) {
+            topRatedRV.getLayoutManager().onRestoreInstanceState(topRatedState);
+        }
+        if (upcominState != null) {
+            upcomingRV.getLayoutManager().onRestoreInstanceState(upcominState);
+        }
+        if (favoriteState != null) {
+            favoriteRV.getLayoutManager().onRestoreInstanceState(favoriteState);
+        }
     }
 
     private void generateFavList(List<MovieEntry> photoList, RecyclerView rv) {
@@ -284,6 +319,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void initView() {
+        mScrollView = findViewById(R.id.mainact_scrollview);
         nowPlayingRV = findViewById(R.id.nowPlayingRV);
         topRatedRV = findViewById(R.id.topRatedRV);
         popularRV = findViewById(R.id.popularRV);
@@ -374,6 +410,50 @@ public class MainActivity extends AppCompatActivity {
         i.putExtra(WHAT_TO_SHOW, POPULAR_MOVIES);
         startActivity(i);
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putIntArray(SCROLL_POSITION,
+                new int[]{mScrollView.getScrollX(), mScrollView.getScrollY()});
+        if (nowPlayingRV != null) {
+            outState.putParcelable(NOW_PLAYING_POSITION, nowPlayingRV.getLayoutManager().onSaveInstanceState());
+        }
+        if (topRatedRV != null) {
+            outState.putParcelable(NOW_PLAYING_POSITION, topRatedRV.getLayoutManager().onSaveInstanceState());
+        }
+        if (popularRV != null) {
+            outState.putParcelable(NOW_PLAYING_POSITION, popularRV.getLayoutManager().onSaveInstanceState());
+        }
+        if (favoriteRV != null) {
+            outState.putParcelable(NOW_PLAYING_POSITION, favoriteRV.getLayoutManager().onSaveInstanceState());
+        }
+        if (upcomingRV != null) {
+            outState.putParcelable(NOW_PLAYING_POSITION, upcomingRV.getLayoutManager().onSaveInstanceState());
+        }
+        super.onSaveInstanceState(outState);
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        final int[] position = savedInstanceState.getIntArray(SCROLL_POSITION);
+        if (position != null)
+            mScrollView.post(new Runnable() {
+                public void run() {
+                    mScrollView.scrollTo(position[0], position[1]);
+                }
+            });
+
+        if (savedInstanceState instanceof Bundle) {
+            nowPlayingState = savedInstanceState.getParcelable(NOW_PLAYING_POSITION);
+            upcominState = savedInstanceState.getParcelable(UPCOMING_POSITION);
+            topRatedState = savedInstanceState.getParcelable(TOP_RATED_POSITION);
+            popularState = savedInstanceState.getParcelable(POPULAR_POSITION);
+            favoriteState = savedInstanceState.getParcelable(FAVORITE_POSITION);
+        }
+        super.onRestoreInstanceState(savedInstanceState);
 
     }
 }
